@@ -1,32 +1,35 @@
-This was a group project perform by James Martin and Bismarck Perez
+This was a group project developed by James Martin and Bismarck Perez.
 
 # Presentation
-Watch the presentation posted to my YouTube Page</br>
+Here is the presentation posted to my YouTube page</br>
 https://www.youtube.com/watch?v=NQYwW9HaEjA&ab_channel=frostbyte000jm
 
 # Genetic Algorithm
-Genetic Algorithm is a method to solve optimization problems through AI using natural selection. It does this through:</br>
-	• Create a Random Population</br>
-	• Test each member of the Population and give them a score. </br>
-	• Randomly pair members of the population with other members of the population. </br>
-	• Mutate random pairing in an attempt to improve the score.</br>
-	• Run them through the test again. </br>
-	• Keep going until desired outcome is reached or max number of generations are reached. </br>
+Genetic Algorithm is a method to solve optimization problems through AI using natural selection. The logic follows the procure stated below.</br> 
+	• Create a random population.</br>
+	• Test each member of the population and assign a score. </br>
+	• Randomly pair members of the population to create offspring. </br>
+	• Mutate random pairings in an attempt to improve the score.</br>
+	• Run the test again with the new population. </br>
+	• Continue until desired outcome is reached or max number of generations are reached. </br>
 
 # Project
-When studying the genetic algorithm, the process felt random. After digging a little deeper into the algorithm, the beginning process was random but as it moved through generations it kept improving. We (Perez and Martin) wanted to explore improving the Genetic Algorithm. 
-We want to replace reproducing with cloning. What this means is to adjust the results of the best parents instead of merging them with others. 
-We also want to have a Fitness function make some corrections as we move along. 
-The last adjustment is to pass down knowledge. Once a certain number of generations have progressed, we want to take the best answer and pass that to a new set of movements that will try and move further.
+When studying the genetic algorithm, the entire process felt chaotic. After researching the algorithm further, the process has a random element, but when taking members of the population and pairing them with other members, their offspring scores kept improving. As developers, we wanted to explore the process of improving the Genetic Algorithm by replacing the act of reproducing with random members of the population, and introduce cloning. In other words, adjust the results using the most qualified members instead of simply merging them with random other members.
+
+We also wanted to have the Fitness function make genetic modifications as the process moved along. 
+The final adjustment was to pass down knowledge once genetics seems to plateau. Once a certain number of generations have progressed, the goal was to take the best mutation and build on top of that with a completely new population. In this case, the car will break the problem into three Genetic Algorithm problems, where each problem is a third of the distance. Once the best solution is found for the first section, it will pass that path to the second section. Then, once the best path is discovered for the second section, it will pass both the first and second path to the third section.
+
+## Result 
+For the most part, our changes showed no improvement except for breaking the problem into smaller Genetic Algorithm problems. The research discovered that building smaller paths and when passing down the information, the algorithm will more accurately park the car.
 
 # Problem to Solve
-The problem we are trying to solve is to have a car park itself using the Genetic Algorithm. There are better algorithms to solve this, but the reason we are using a car parking experiment is because we want to test a theory of passing down knowledge. Once the car has progressed the best it can to a location, the algorithm will grow a new population and continue to find a better direction from there.
+The problem we are trying to solve is to have a car park itself using the Genetic Algorithm. There are better algorithms to solve this, however, the reason we are using a car parking experiment is because we want to show progression. Placing a car on an open plane, with enough distance to break up into multiple problems, it will be easy to give a score based on how close the car made it into the center of the parking spot.
 
 ## Changes
-1) The fitness test will check if the object has moved out of bounds if it has it will reselect a direction to keep it in bounds. 
-2) Instead of creating children we will randomly mutate movements that the original population made
-3) After fitness test we will purge the population that fell under a certain amount and using the best answers repopulation to the population.
-4) When the high score stops changing after a certain number of generations, we will pass on that knowledge to move the object further. 
+1) The Fitness test will check if the object has moved out of bounds, and if it has it will reselect a direction to keep it in bounds. 
+2) Instead of creating children, the algorithm will randomly mutate movements that the original population made.
+3) After the Fitness test, the algorithm will purge the population that fell under a certain amount, and using the best answers, spawn new members into the population.
+4) When the high score no longer changes after a certain number of generations, the algorithm will pass on that knowledge to move the object further. 
 
 ## References used
 https://www.geeksforgeeks.org/genetic-algorithms/ </br>
